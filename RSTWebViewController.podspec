@@ -10,11 +10,11 @@ Pod::Spec.new do |s|
     'Riley Testut' => 'riley@rileytestut.com'
   }
   s.source = {
-    :git => 'https://github.com/rileytestut/RSTWebViewController.git',
+    :git => 'https://github.com/anthonya1999/RSTWebViewController.git',
     :tag => s.version.to_s
   }
   s.source_files = 'RSTWebViewController/**/*.{h,m}'
   s.resources = 'RSTWebViewController/**/*.png'
-  s.dependency     'NJKWebViewProgress', '~> 0.1.0'
+  s.dependency     'NJKWebViewProgress', '~> 0.2.3'
   s.requires_arc = true
 end
