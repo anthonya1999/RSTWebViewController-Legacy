@@ -15,6 +15,6 @@ Pod::Spec.new do |s|
   }
   s.source_files = 'RSTWebViewController/**/*.{h,m}'
   s.resources = 'RSTWebViewController/**/*.png'
-  s.dependency     'NJKWebViewProgress', '~> 0.2.3'
+  s.dependency     'NJKWebViewProgress'
   s.requires_arc = true
 end
