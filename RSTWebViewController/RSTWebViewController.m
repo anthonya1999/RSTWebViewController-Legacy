@@ -342,7 +342,7 @@
 
 - (void)hideProgressViewWithCompletion:(void (^)(void))completion
 {
-    [UIView animateWithDuration:0.4 animations:^{
+    [UIView animateWithDuration:1.0 animations:^{
         self.progressView.alpha = 0.0;
     } completion:^(BOOL finished) {
         dispatch_async(dispatch_get_main_queue(), ^{
