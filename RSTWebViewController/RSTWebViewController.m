@@ -127,7 +127,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    // Do any additional setup after loading the view.
     
     self.progressView.frame = CGRectMake(0,
                                          CGRectGetHeight(self.navigationController.navigationBar.bounds) - CGRectGetHeight(self.progressView.bounds),
@@ -342,7 +342,7 @@
 
 - (void)hideProgressViewWithCompletion:(void (^)(void))completion
 {
-    [UIView animateWithDuration:1.0 animations:^{
+    [UIView animateWithDuration:0.8 delay:0.2 options:UIViewAnimationOptionAllowAnimatedContent animations:^{
         self.progressView.alpha = 0.0;
     } completion:^(BOOL finished) {
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -417,7 +417,7 @@
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
 {
-	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     [self refreshToolbarItems];
     
     [self didFinishLoading];
@@ -546,7 +546,7 @@
 - (void)dealloc
 {
     [self.webView stopLoading];
- 	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     self.webView.delegate = nil;
 }
 
