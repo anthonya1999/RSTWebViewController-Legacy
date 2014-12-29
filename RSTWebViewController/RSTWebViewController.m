@@ -216,7 +216,8 @@
     
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
     {
-        self.toolbarItems = @[self.fixedSpaceButton, self.goBackButton, self.flexibleSpaceButton, self.goForwardButton, self.flexibleSpaceButton, self.refreshButton, self.flexibleSpaceButton, self.shareButton, self.fixedSpaceButton];
+        self.fixedSpaceButton.width = 1.0;
+        self.toolbarItems = @[self.fixedSpaceButton, self.goBackButton, self.flexibleSpaceButton, self.fixedSpaceButton, self.fixedSpaceButton, self.goForwardButton, self.flexibleSpaceButton, self.refreshButton, self.flexibleSpaceButton, self.shareButton, self.fixedSpaceButton];
     }
     else
     {
