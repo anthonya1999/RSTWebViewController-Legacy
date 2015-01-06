@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = 'RSTWebViewController'
+  s.name         = 'RSTWebViewController-Legacy'
   s.version      = '0.1'
   s.summary      = 'Powerful yet beautiful iOS 7 web browser'
   s.homepage     = 'http://rileytestut.com/'
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     'Riley Testut' => 'riley@rileytestut.com'
   }
   s.source = {
-    :git => 'https://github.com/anthonya1999/RSTWebViewController.git',
+    :git => 'https://github.com/anthonya1999/RSTWebViewController-Legacy.git',
     :tag => s.version.to_s
   }
   s.source_files = 'RSTWebViewController/**/*.{h,m}'
